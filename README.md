@@ -1,6 +1,7 @@
 # Multithreaded-Merge-Sort
 
-Merge Sort, but it is multithreaded.
+Linux based.
+Merge Sort, but it is multithreaded by using POSIX thread API.
 
 # How to Install
 
