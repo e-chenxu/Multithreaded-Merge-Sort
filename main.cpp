@@ -8,8 +8,8 @@
 #include <fstream>
 #include <pthread.h>
 
-#include "p1_process.h"
-#include "p1_threads.h"
+#include "processes.h"
+#include "threads.h"
 
 using namespace std;
 
