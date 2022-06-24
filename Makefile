@@ -1,3 +1,4 @@
+#used template
 EXEC=p1_exec
 
 CC=g++
