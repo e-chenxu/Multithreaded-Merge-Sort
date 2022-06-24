@@ -4,7 +4,7 @@
 #include <vector>
 #include <pthread.h>
 
-#include "p1_process.h"
+#include "processes.h"
 
 // class to handle multithreaded merge sort
 class ParallelMergeSorter {
