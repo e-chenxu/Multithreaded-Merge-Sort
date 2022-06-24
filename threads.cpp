@@ -2,8 +2,8 @@
 #include <pthread.h>
 #include <iostream>
 
-#include "p1_process.h"
-#include "p1_threads.h"
+#include "processes.h"
+#include "threads.h"
 
 using namespace std;
 
