@@ -18,8 +18,6 @@ using namespace std;
 // called in each child process right after forking
 void process_classes(vector<string> classes, int num_threads) {
   printf("Child process is created. (pid: %d)\n", getpid());
-  // Each process should use the sort function which you have defined  		
-  // in the p1_threads.cpp for multithread sorting of the data. 
     string line;
     ifstream file;
     string temporary_string; // holds string that we need to conver to the numbers
@@ -28,6 +26,7 @@ void process_classes(vector<string> classes, int num_threads) {
     int count;
     double sum; // holds sum of entire file
     double average, median, standard_dev; // stuff
+    // gets the files to sort
     for (int i = 0; i < classes.size(); i++) {
         // get all the input/output file names here
         string class_name = classes[i];
