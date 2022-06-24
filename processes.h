@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-// student struct
+// student struct 
 struct student {
   unsigned long id;
   double grade;
