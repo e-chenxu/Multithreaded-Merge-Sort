@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <pthread.h>
-
 #include "processes.h"
 
 // class to handle multithreaded merge sort
