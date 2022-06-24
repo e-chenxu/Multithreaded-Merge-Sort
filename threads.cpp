@@ -1,7 +1,6 @@
 #include <vector>
 #include <pthread.h>
 #include <iostream>
-
 #include "processes.h"
 #include "threads.h"
 
@@ -26,7 +25,7 @@ ParallelMergeSorter::ParallelMergeSorter(vector<student> &original_list, int num
   this->num_threads = num_threads;
 }
 
-// This function will be called by each child process to perform multithreaded sorting
+// this function will be called by each child process to perform multithreaded sorting
 vector<student> ParallelMergeSorter::run_sort() {
     int threadcode;
     for (int i = 0; i < num_threads; i++) {
@@ -60,10 +59,8 @@ void ParallelMergeSorter::merge_sort(int lower, int upper) {
     }
 }
 
-// Standard merge implementation for merge sort
+// standard merge implementation for merge sort
 void ParallelMergeSorter::merge(int lower, int middle, int upper) {
-    // Your implementation goes here, you will need to implement:
-    // Merge for top-down merge sort
     //  - The merge results should go in temporary list, and once the merge is done, the values
     //  from the temporary list should be copied back into this->sorted_list
     // once the recurvise call is finished, start merging
@@ -110,7 +107,7 @@ void ParallelMergeSorter::merge(int lower, int middle, int upper) {
     }
 }
 
-// This function will be used to merge the resulting sorted sublists together
+// this function will be used to merge the resulting sorted sublists together
 void ParallelMergeSorter::merge_threads() {
   // merge all threads using algorithm
   int i;
@@ -149,7 +146,7 @@ void ParallelMergeSorter::merge_threads() {
     }
 }
 
-// This function is the start routine for the created threads, it should perform merge sort on its assigned sublist
+// this function is the start routine for the created threads, it should perform merge sort on its assigned sublist
 void * ParallelMergeSorter::thread_init(void * args) {
   // create arguments
   MergeSortArgs * sort_args = (MergeSortArgs *) args;
